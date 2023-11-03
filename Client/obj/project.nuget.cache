@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "GnvH/hIH2PekaBhgPfajPgVKl3gKBmzKXNOg6pzm226G9GZKFu5h6iSVcDIwZxNPJhD7sMuMxfGemsqYtVjkoA==",
+  "success": true,
+  "projectFilePath": "D:\\Sources\\MEM-Multi-Run-Framework\\Client\\Client.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EwEDev.DESKTOP-UH3P7TM\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\EwEDev.DESKTOP-UH3P7TM\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\EwEDev.DESKTOP-UH3P7TM\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\EwEDev.DESKTOP-UH3P7TM\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
