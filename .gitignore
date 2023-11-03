@@ -1,6 +1,4 @@
-*/obj/*
-*/bin/*
-*.user
-.vs/*
-
-
+.vs
+obj
+bin
+/*.user

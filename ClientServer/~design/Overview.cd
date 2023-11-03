@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClientServer.cDataExchangeProtocol" Collapsed="true">
+    <Position X="8" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QQQIEABAAAJgwEAkAEAAUAwAQABAhUIARAAKKgBIAgE=</HashCode>
+      <FileName>Data transport\Data exchange protocols\cDataExchangeProtocol.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientServer.cDirectDataExchangeProtocol" Collapsed="true">
+    <Position X="6.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACACAAAAAAAAAAAAAIAAAAAAAEIAAAAAgABBAAA=</HashCode>
+      <FileName>Data transport\Data exchange protocols\cDirectDataExchangeProtocol.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientServer.cFolderContentWatcher" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIABACQAACAAAAAgECAAIACAFAIgABQAAAACIQACBJA=</HashCode>
+      <FileName>Utilities\Files\cFolderContentWatcher.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClientServer.cFileDataExchangeProtocol" Collapsed="true">
+    <Position X="9.25" Y="2" Width="2" />
+    <NestedTypes>
+      <Enum Name="ClientServer.cFileDataExchangeProtocol.eSerializationFormat" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Data transport\Data exchange protocols\cFileDataExchangeProtocol.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="m_watcher" Type="ClientServer.cFolderContentWatcher">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.003" Y="0.162" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AUEAAwREAAAAMgAgAAEAAABASCBEgUKAEAAAAQAABAA=</HashCode>
+      <FileName>Data transport\Data exchange protocols\cFileDataExchangeProtocol.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_watcher" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClientServer.cTaskRunnerFactory" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAEAIAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Jobs and Tasks\Execution\cTaskRunnerFactory.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientServer.cTaskRunner" Collapsed="true">
+    <Position X="2.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAgEAiAAACAgAAAAUQAAIAEAIAAAAIQIAAwAAAA=</HashCode>
+      <FileName>Jobs and Tasks\Execution\cTaskRunner.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientServer.cEmbeddedTaskRunner" Collapsed="true">
+    <Position X="1.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jobs and Tasks\Execution\cEmbeddedTaskRunner.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientServer.cExecutableTaskRunner" Collapsed="true">
+    <Position X="4" Y="2" Width="2" />
+    <AssociationLine Name="m_monitor" Type="ClientServer.cProcessMonitor">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.992" Y="0.193" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAkAAAAQgAAAAAAAAAEgAAAACAAAAA=</HashCode>
+      <FileName>Jobs and Tasks\Execution\cExecutableTaskRunner.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_monitor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClientServer.cProcessMonitor" Collapsed="true">
+    <Position X="4" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAACAAAAAIAAIEAAAIIQAAAIAAAAAAAAECAiAAACQ=</HashCode>
+      <FileName>Utilities\Process\cProcessMonitor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientServer.cWorkload" Collapsed="true">
+    <Position X="1.5" Y="5.25" Width="2" />
+    <AssociationLine Name="Jobs" Type="ClientServer.cJob">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.107" Y="0.391" Height="0.182" Width="0.67" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAEAAAAAggAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jobs and Tasks\Definitions\cWorkload.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Jobs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClientServer.cJob" Collapsed="true">
+    <Position X="4" Y="5.25" Width="2" />
+    <AssociationLine Name="Tasks" Type="ClientServer.cTask">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.079" Y="0.362" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAIAAAAAAAQAAAAAAAAAACAgFAAAAAAAAAAIQAAAAAA=</HashCode>
+      <FileName>Jobs and Tasks\Definitions\cJob.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tasks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClientServer.cTask" Collapsed="true">
+    <Position X="6.75" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEAAAAAAAgAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Jobs and Tasks\Definitions\cTask.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Server.cServer" Collapsed="true">
+    <Position X="4.25" Y="3.25" Width="1.75" />
+    <AssociationLine Name="m_protocol" Type="ClientServer.cDataExchangeProtocol">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.06" Y="0.141" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAEAACABAgAAgAGAAEIACQAAAABAAhAAAAAAAAAA=</HashCode>
+      <FileName>Server\cServer.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_clients" />
+      <Field Name="m_protocol" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="System.Collections.Generic.List(Of T)" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClientServer.cDataExchangeProtocol" Collapsed="true">
+    <Position X="4.25" Y="4.25" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ClientServer.cWorkload" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Server.cWorkloadDispatcher" Collapsed="true">
+    <Position X="1" Y="3.25" Width="2" />
+    <AssociationLine Name="m_server" Type="Server.cServer">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.245" Y="0.07" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAwEAgAAgAABACAAUBQCRAACAAAQAAAIQAAgQAI=</HashCode>
+      <FileName>Server\cWorkloadDispatcher.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_server" />
+      <Property Name="Workload" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Server</RootNamespace>
+    <TargetFramework>net6.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dispatching\cJobDispatchQueue.vb" />
+    <Compile Remove="Dispatching\cWorkloadDispatcher.vb" />
+    <Compile Remove="Dispatching\cWorkloadDispatcherBase.vb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClientServer\ClientServer.vbproj" />
+  </ItemGroup>
+
+</Project>
